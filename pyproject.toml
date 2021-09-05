@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "testapp"
+version = "0.1.0"
+description = ""
+authors = ["Vasiliy <vkraskov@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+fastapi = "^0.68.1"
+uvicorn = "^0.15.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
