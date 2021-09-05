@@ -10,4 +10,4 @@ if __name__ == "__main__":
     if 'APP_API_PORT' in environ:
         config['app_port'] = environ['APP_API_PORT']
 
-    uvicorn.run("main:app", host=config['app_host'], port=config['app_port'], reload=True)
+    uvicorn.run("main:app", host=config['app_host'], port=int(config['app_port']), reload=True)
